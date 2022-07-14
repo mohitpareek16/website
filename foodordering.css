@@ -323,6 +323,7 @@ span {
     margin-top: 30px;
     margin-left: 20px;
     text-align: left;
+    flex-direction: column;
   }
 
   .welcome .images img {
