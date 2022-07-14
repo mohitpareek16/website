@@ -1,0 +1,411 @@
+@font-face {
+  font-family: maragsâ;
+  src: url('Maragsâ-Display.otf');
+  /* IE9 */
+}
+
+.body {
+  background-color: #411218;
+  width: 100vw;
+}
+
+header {
+  margin-top: 2%;
+  text-align: center;
+}
+
+header img {
+  width: 300px;
+}
+
+span {
+  color: #fff;
+  font-size: 20px;
+  /* padding-top: 5px; */
+}
+
+.h1 {
+  color: #c8b02d;
+  margin-top: 20px;
+  /* margin-left: 430px; */
+  text-align: center;
+  font-family: "Jazmin", sans-serif;
+}
+
+.h3 {
+  color: #c8b02d;
+  font-size: 45px;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.welcome {
+  margin-top: 30px;
+  margin-left: 10%;
+  text-align: center;
+  display: flex;
+
+}
+
+.welcome img {
+  width: 800px;
+
+}
+
+.nav {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 15px;
+}
+
+.home:hover {
+  text-decoration: underline;
+}
+
+.menu:hover {
+  text-decoration: underline;
+}
+
+.contact:hover {
+  text-decoration: underline;
+}
+
+/* .welcome .images img{
+    height: 454px;
+    z-index: -1;
+  } */
+.box {
+  text-align: center;
+  margin: 10px auto;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  display: flex;
+}
+
+.box_cover {
+  display: flex;
+}
+
+.food_item {
+  width: 400px !important;
+  padding: 0px 40px;
+  text-align: left;
+}
+
+.heading {
+  font-size: 30px;
+  color: white;
+}
+
+.allitems {
+  padding-top: 15%;
+}
+
+.content {
+  height: 382px;
+  padding-top: 5%;
+  background-color: #9D1B33;
+  margin-right: 12%;
+  z-index: 1;
+  text-align: center;
+  /* width: 500px;   */
+}
+
+.line {
+  margin-top: 60px;
+  opacity: 0.2;
+}
+
+.btn1 {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.biryani {
+  color: #fff;
+}
+
+.description {
+  /* width: 70%; */
+  text-align: left;
+  padding: 0px 120px;
+  font-size: smaller;
+  color: #666;
+}
+
+.food_item .biryani span {
+  padding-left: 4%;
+}
+
+.food_item p {
+  font-size: 18px;
+  color: #fff;
+}
+
+.btn {
+  background-color: white;
+  /* white */
+  border: none;
+  color: black;
+  padding: 7px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.about {
+  color: white;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about p {
+  padding: 10px 300px;
+  font-size: 20px;
+}
+
+.social_media {
+  margin-left: 180px;
+  text-align: left;
+}
+
+.social {
+  /* font-size: 20px; */
+  color: white;
+}
+
+.col-wrapper-10 {
+  color: white;
+}
+
+.contact_container {
+  padding-top: 50px;
+  display: flex;
+  text-align: left;
+}
+
+.contact_box {
+  margin-left: 180px;
+  margin-top: 10px;
+}
+
+
+
+.category {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.category .box {
+  border: none;
+  border-radius: .5rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.category .box img {
+  width: 20rem;
+
+}
+
+.category .box h3 {
+  font-size: 20px;
+
+}
+
+.price {
+  margin: 30px;
+  text-align: left;
+}
+
+.social_media a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.social_icon {
+  text-align: center;
+}
+
+.fa {
+  padding: 15px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.map {
+  width: 300px;
+  height: 300px;
+  padding-left: 150px;
+}
+
+
+
+
+/* mobie versoin */
+
+
+@media screen and (max-width: 1461px) {
+
+  .content {
+    text-align: center;
+    width: 300px;
+
+  }
+
+  .h3 {
+    font-size: 30px;
+  }
+
+  .content {
+    height: 392px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .content {
+    text-align: center;
+    width: 300px;
+
+  }
+    .welcome .images img {
+      width: 600px;
+    }
+
+  .h3 {
+    font-size: 24px;
+  }
+
+  .content {
+    padding-top: 30px;
+    height: 308px;
+  }
+     span {
+       font-size: 18px;
+     }
+
+    
+.about p {
+           padding: 10px 200px;
+           font-size: 16px;
+         }
+}
+
+@media screen and (max-width: 500px) {
+  .welcome {
+    margin-top: 30px;
+    margin-left: 20px;
+    text-align: left;
+  }
+
+  .welcome .images img {
+    width: 300px;
+  }
+
+  .content {
+    padding-top: 0px;
+    margin-top: -5px;
+    height: 250px;
+    text-align: center;
+    margin-right: 0px;
+  }
+
+  span {
+    font-size: 14px;
+  }
+
+  .h3 {
+    font-size: 24px;
+  }
+
+  .btn1 {
+    font-size: 14px;
+  }
+
+  .contact_container {
+    flex-direction: column;
+  }
+
+  .map {
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+
+  .food_item {
+    width: 300px !important;
+  }
+
+  .about h1 {
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .about {
+    text-align: left;
+  }
+
+  .about p {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .social_media {
+    margin-left: 10px;
+    text-align: left;
+  }
+
+  .social_media h1 {
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .social_icon {
+    text-align: left;
+  }
+
+  .box {
+    text-align: left;
+    margin-left: -50px;
+  }
+
+  .contact_box {
+    margin-left: 10px;
+    margin-top: -20px;
+  }
+
+  .category {
+    width: 300px;
+  }
+
+  .nav {
+    text-align: left;
+    margin-left: 10px;
+  }
+}
