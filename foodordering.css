@@ -1,4 +1,10 @@
 @font-face {
+  font-family: gilroy;
+  src: url('Gilroy-Light.otf');
+  /* IE9 */
+}
+
+@font-face {
   font-family: maragsâ;
   src: url('Maragsâ-Display.otf');
   /* IE9 */
@@ -7,11 +13,14 @@
 .body {
   background-color: #411218;
   width: 100vw;
+  font-family: "gilroy";
 }
 
 header {
   margin-top: 2%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header img {
@@ -29,22 +38,25 @@ span {
   margin-top: 20px;
   /* margin-left: 430px; */
   text-align: center;
-  font-family: "Jazmin", sans-serif;
+  
 }
 
-.h3 {
+.heading3 {
   color: #c8b02d;
   font-size: 45px;
   align-items: center;
   text-align: center;
-  margin: 20px 0;
+  font-family: "maragsâ";
+  padding: 0px 20px;
 }
 
 .welcome {
-  margin-top: 30px;
-  margin-left: 10%;
-  text-align: center;
-  display: flex;
+  align-items: center;
+    /* margin-top: 30px; */
+    /* margin-left: 10%; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -53,29 +65,39 @@ span {
 
 }
 
-.nav {
-  font-size: 20px;
-  margin-top: 20px;
-  text-align: center;
-  color: white;
-  list-style: none;
+.nav-bar {
+    font-size: 20px;
+      display: flex;
+      margin: 20px auto;
+      text-align: center;
+      color: white;
+      list-style: none;
+      /* width: 100%; */
+      align-items: center;
+      justify-content: center;
 }
 
 .nav-links a {
   text-decoration: none;
+  list-style: none;
   color: #fff;
   padding-left: 15px;
 }
 
+
 .home:hover {
+  color: #c8b02d;
   text-decoration: underline;
+  
 }
 
 .menu:hover {
+  color: #c8b02d;
   text-decoration: underline;
 }
 
 .contact:hover {
+  color: #c8b02d;
   text-decoration: underline;
 }
 
@@ -84,46 +106,61 @@ span {
     z-index: -1;
   } */
 .box {
-  text-align: center;
-  margin: 10px auto;
-  gap: 0.8rem;
-  flex-wrap: wrap;
-  padding-top: 1rem;
+ width: 1150px;
   display: flex;
+  justify-content: space-between;
 }
 
 .box_cover {
   display: flex;
 }
 
-.food_item {
-  width: 400px !important;
-  padding: 0px 40px;
-  text-align: left;
+.food_item{
+      width: 320px;
+}
+.food_item img:hover {
+transform: scale(1.05) rotate(3deg);
+transition: 300ms;
 }
 
 .heading {
   font-size: 30px;
   color: white;
+  margin-bottom: 50px;
 }
 
-.allitems {
+/* .allitems {
   padding-top: 15%;
-}
+} */
 
 .content {
-  height: 382px;
-  padding-top: 5%;
-  background-color: #9D1B33;
-  margin-right: 12%;
-  z-index: 1;
-  text-align: center;
-  /* width: 500px;   */
+    height: 449px;
+      padding: -1px 0px;
+      background-color: #9D1B33;
+      /* margin-right: 12%; */
+      z-index: 1;
+      text-align: center;
+      padding-bottom: -2px !important;
+      /* width: 500px; */
+      margin-top: -3px;
+      display: flex;
+      flex-direction: column;
+      /* padding-top: 15%; */
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
 }
-
+.const{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
 .line {
   margin-top: 60px;
   opacity: 0.2;
+  width: 1150px;
 }
 
 .btn1 {
@@ -134,8 +171,13 @@ span {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-weight: bolder;
   font-size: 20px;
   margin-top: 20px;
+}
+.btn1:hover {
+color: #fff;
+background-color: #000;
 }
 
 .biryani {
@@ -174,9 +216,13 @@ span {
 
 .about {
   color: white;
-  margin-top: 60px;
-  margin-bottom: 30px;
-  text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about p {
@@ -185,8 +231,10 @@ span {
 }
 
 .social_media {
-  margin-left: 180px;
-  text-align: left;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .social {
@@ -200,27 +248,26 @@ span {
 
 .contact_container {
   padding-top: 50px;
-  display: flex;
-  text-align: left;
+    display: flex;
+    text-align: left;
+    width: 1150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.contact_box {
-  margin-left: 180px;
-  margin-top: 10px;
-}
+
 
 
 
 .category {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.category .box {
-  border: none;
-  border-radius: .5rem;
-  text-align: center;
-  padding: 2rem;
+  display: flex;
+    /* text-align: center; */
+    /* margin-top: 50px; */
+    width: 1150px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .category .box img {
@@ -230,14 +277,19 @@ span {
 
 .category .box h3 {
   font-size: 20px;
-
+    margin-bottom: 0px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .price {
-  margin: 30px;
-  text-align: left;
+  width: 1150px;
 }
-
+.menu_header{
+  display: flex;
+  justify-content: center;
+}
 .social_media a {
   text-decoration: none;
   color: #fff;
@@ -250,6 +302,7 @@ span {
 .fa {
   padding: 15px;
   width: 80px;
+  font-size: 32px!important;
   text-align: center;
   text-decoration: none;
 }
@@ -260,17 +313,18 @@ span {
 }
 
 .map {
-  width: 300px;
-  height: 300px;
-  padding-left: 150px;
+  width: 500px;
+  height: 500px;
 }
-
+.col-wrapper-10 p{
+  line-height: 28px;
+}
 
 
 
 /* mobie versoin */
 
-
+/* 
 @media screen and (max-width: 1461px) {
 
   .content {
@@ -279,7 +333,7 @@ span {
 
   }
 
-  .h3 {
+  .heading3 {
     font-size: 30px;
   }
 
@@ -299,7 +353,7 @@ span {
       width: 600px;
     }
 
-  .h3 {
+  .heading3 {
     font-size: 24px;
   }
 
@@ -342,7 +396,7 @@ span {
     font-size: 14px;
   }
 
-  .h3 {
+  .heading3 {
     font-size: 24px;
   }
 
@@ -357,10 +411,6 @@ span {
   .map {
     padding-top: 20px;
     padding-left: 10px;
-  }
-
-  .food_item {
-    width: 300px !important;
   }
 
   .about h1 {
@@ -391,10 +441,7 @@ span {
     text-align: left;
   }
 
-  .box {
-    text-align: left;
-    margin-left: -50px;
-  }
+  
 
   .contact_box {
     margin-left: 10px;
@@ -409,4 +456,4 @@ span {
     text-align: left;
     margin-left: 10px;
   }
-}
+} */
